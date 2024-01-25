@@ -1,0 +1,35 @@
+name: "nba"
+version: "1.0.0"
+config-version: 2
+
+profile: "nba"
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  nba:
+    utils:
+      +schema: utils
+      +materialized: table
+    staging: 
+      +schema: staging
+      +materialized: view
+    intermediate:
+      +schema: intermediate
+      +materialized: view
+    warehouse:
+      +schema: warehouse
+      +materialized: table
+    
+
+vars:
+    "dbt_date:time_zone": "America/Los_Angeles"
