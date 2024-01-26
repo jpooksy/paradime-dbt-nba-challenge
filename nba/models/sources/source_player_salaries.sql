@@ -7,10 +7,11 @@ WITH source AS (
 
 renamed AS (
     SELECT
-        player,
+        player_id,
+        player_name,
         salary, 
         rank,
-        year as season
+        season
     FROM
         source
 )
