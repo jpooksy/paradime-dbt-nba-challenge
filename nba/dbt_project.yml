@@ -17,5 +17,12 @@ clean-targets:
 
 models:
   nba:
-    example:
+    sources: 
+      +schema: sources
       +materialized: view
+    intermediate:
+      +schema: intermediate
+      +materialized: view
+    warehouse:
+      +schema: warehouse
+      +materialized: table

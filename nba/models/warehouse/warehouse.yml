@@ -1,0 +1,5 @@
+version: 2
+models:
+  - name: fct_player_points_per_regular_season_example
+  - name: fct_player_points_per_playoff_season_example
+  - name: fct_players_by_college 

@@ -4,6 +4,7 @@ WITH player_game_logs_agg AS (
         player_id,
         player_name,
         season,
+        game_type,
         -- Total field goals made by the player
         SUM(field_goals_made) AS field_goals_made,
         -- Total field goals attempted by the player
@@ -53,11 +54,8 @@ WITH player_game_logs_agg AS (
     FROM 
         -- Reference to the source data table containing player game logs
         {{ ref('source_player_game_logs') }}
-    WHERE 
-        -- Filter for regular season games only
-        game_type = 'Regular Season'
     GROUP BY 
-        player_id, player_name, season
+        player_id, player_name, season, game_type
 )
 
 -- Select all aggregated player game statistics
@@ -65,3 +63,4 @@ SELECT
     * 
 FROM
     player_game_logs_agg
+    
