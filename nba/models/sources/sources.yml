@@ -12,4 +12,18 @@ sources:
       - name: TEAMS
       - name: TEAM_SPEND
       - name: TEAM_STATS
-      
+version: 2
+models:
+  - name: source_common_player_info
+    description: "**Business Summary:**\n\nThe business summary of the model explanation\
+      \ is that the code is performing a data transformation process using the dbt\
+      \ model. It involves selecting specific columns from a table, renaming them,\
+      \ and returning the transformed data.\n\n**Technical Summary:**\n\nThe above\
+      \ code is a data transformation process that follows the dbt (data build tool)\
+      \ model. \n\nIt starts by creating a temporary table called `source` which selects\
+      \ all columns from the `public.common_player_info` table. \n\nNext, it creates\
+      \ another temporary table called `renamed` which selects specific columns from\
+      \ the `source` table and renames them accordingly. This step involves aliasing\
+      \ columns and renaming them to more appropriate names. \n\nFinally, it selects\
+      \ all columns from the `renamed` table and returns the result of the transformed\
+      \ data."
