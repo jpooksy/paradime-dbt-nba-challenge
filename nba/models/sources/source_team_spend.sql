@@ -2,12 +2,11 @@ with source as (
     select 
         *
     from 
-        default.team_spend
+        public.team_spend
 ),
 
-
-renamed AS (
-    SELECT
+renamed as (
+    SELECT 
         team_id,
         team_city,
         team_name,
@@ -19,9 +18,10 @@ renamed AS (
         luxury_tax_payroll,
         luxury_tax_space,
         luxury_tax_bill
-    FROM
+    FROM 
         source
 )
+
 SELECT
     *
 FROM
