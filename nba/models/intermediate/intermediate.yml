@@ -1,0 +1,4 @@
+version: 2
+models:
+  - name: player_game_logs_agg_example
+  - name: player_salaries_example
