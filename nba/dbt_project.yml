@@ -17,8 +17,8 @@ clean-targets:
 
 models:
   nba:
-    sources: 
-      +schema: sources
+    staging: 
+      +schema: staging
       +materialized: view
     intermediate:
       +schema: intermediate

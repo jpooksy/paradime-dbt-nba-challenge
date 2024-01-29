@@ -2,7 +2,7 @@ with source as (
     select 
         *
     from 
-        public.team_spend
+        public.team_spend_by_season
 ),
 
 renamed as (

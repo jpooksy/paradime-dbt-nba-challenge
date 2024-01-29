@@ -2,22 +2,14 @@ WITH source AS (
     SELECT 
         * 
     FROM 
-        public.team_stats
+        public.team_stats_by_season
 ),
 
 renamed AS (
     SELECT 
         team_id,
-        CASE
-            WHEN team_city = 'LA' THEN 'Los Angeles'
-            ELSE team_city
-        END AS team_city,
+        team_city,
         team_name,
-        CASE
-            WHEN team_city = 'LA' AND team_name = 'Clippers' THEN 'Los Angeles Clippers'
-            WHEN team_city = 'LA' AND team_name = 'Lakers' THEN 'Los Angeles Lakers'
-            ELSE CONCAT(CASE WHEN team_city = 'LA' THEN 'Los Angeles' ELSE team_city END, ' ', team_name)
-        END AS team_full_name,
         year AS season,
         gp AS games_played,
         wins,

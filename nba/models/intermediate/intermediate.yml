@@ -1,3 +1,93 @@
 version: 2
+
 models:
   - name: player_game_logs_agg_example
+    description: >-
+      This model aggregates player game logs for regular season and playoff games. 
+      It calculates various statistics for each player during a season,
+      And groups the data by season (example: 2022-23) and game_type (example: Regular Season, Playoffs)
+
+    columns:
+      - name: player_id
+        description: "Unique identifier for the player."
+
+      - name: player_name
+        description: "Full name of the player."
+
+      - name: season
+        description: "NBA season during which the game was played."
+
+      - name: game_type
+        description: "Type of game, e.g., Regular Season, Playoffs."
+
+      - name: field_goals_made
+        description: "Total field goals made by the player."
+
+      - name: field_goals_attempted
+        description: "Total field goals attempted by the player."
+
+      - name: field_goal_pct
+        description: "Field goal percentage for the player in the game."
+
+      - name: three_point_made
+        description: "Total three-point field goals made by the player."
+
+      - name: three_point_attempted
+        description: "Total three-point field goals attempted by the player."
+
+      - name: three_point_pct
+        description: "Three-point field goal percentage for the player in the game."
+
+      - name: free_throws_made
+        description: "Total free throws made by the player."
+
+      - name: free_throws_attempted
+        description: "Total free throws attempted by the player."
+
+      - name: free_throw_pct
+        description: "Free throw percentage for the player in the game."
+
+      - name: total_rebounds
+        description: "Total rebounds grabbed by the player."
+
+      - name: offensive_rebounds
+        description: "Total offensive rebounds grabbed by the player."
+
+      - name: defensive_rebounds
+        description: "Total defensive rebounds grabbed by the player."
+
+      - name: assists
+        description: "Total assists made by the player."
+
+      - name: blocks
+        description: "Total blocks made by the player."
+
+      - name: steals
+        description: "Total steals made by the player."
+
+      - name: personal_fouls
+        description: "Total personal fouls committed by the player."
+
+      - name: turnovers
+        description: "Total turnovers committed by the player."
+
+      - name: total_points
+        description: "Total points scored by the player."
+      
+      - name: avg_points
+        description: "Avg points scored by the player."
+
+      - name: plus_minus
+        description: "Plus-minus statistic for the player, indicating the point differential when the player was on the court."
+
+      - name: mins_played
+        description: "Total minutes played by the player in the game."
+
+      - name: loss_counter
+        description: "Count of losses when the player participated."
+
+      - name: win_counter
+        description: "Count of wins when the player participated."
+
+      - name: games_played_counter
+        description: "Count of games played (excluding games with 0 minutes played)."

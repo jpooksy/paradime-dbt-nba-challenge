@@ -1,5 +1,84 @@
 version: 2
 models:
-  - name: fct_player_points_per_regular_season_example
+
   - name: fct_player_points_per_playoff_season_example
+    description: >-
+      This model identifies nba players who have scored the most points during a playoff season. It also includes their average points.
+      
+    columns:
+      - name: player_id
+        description: "Unique identifier for each player."
+      
+      - name: player_season
+        description: >- 
+          Name of the player and the abbreviated season based on the grouping (season)
+          This format is easier to data vizualization
+          Example: 
+            Instead of having two columns like:
+              - Player_Name: Michael Jordan
+              - Season: 1991-92
+            I have one column, 'player_season' in this format: 'Michael Jordan (91-92)'
+
+      - name: total_points
+        description: "Total points scored by a player in a given playoff season"
+
+      - name: avg_points
+        description: "Average points scored by a player in a given playoff season"
+
+
+  - name: fct_player_points_per_regular_season_example
+    description: >-
+      This model identifies nba players who have scored the most points during a regular season. It also includes their average points.
+      
+    columns:
+      - name: player_id
+        description: "Unique identifier for each player."
+      
+      - name: player_season
+        description: >- 
+          Name of the player and the abbreviated season based on the grouping (season)
+          This format is easier to data vizualization
+          Example: 
+            Instead of having two columns like:
+              - Player_Name: Wilt Champerlain
+              - Season: 1961-1962
+            I have one column, 'player_season' in this format: 'Wilt Champerlain (61-62)'
+
+      - name: total_points
+        description: "Total points scored by a player in a given regular season"
+
+      - name: avg_points
+        description: "Average points scored by a player in a given regular season"
+
+
   - name: fct_players_by_college 
+    description: >-
+      This model identifies colleges with the most NBA players
+      
+    columns:
+      - name: total_points
+        description: "Total points scored by a player in a given regular season"
+
+      - name: avg_points
+        description: "Average points scored by a player in a given regular season"
+
+
+  - name: calculate_team_playoff_stats
+    description: >-
+      This query calculates playoff statistics for NBA teams, including the number of seasons played,
+      total playoff appearances, and playoff appearance percentage.
+    columns:
+      - name: team_id
+        description: "Unique identifier for each NBA team."
+      - name: team_name
+        description: >-
+          Current Name of the NBA team. This is necessary becasue NBA team names periodically change.
+          Example: The Seattle Supersonics turned into the Oklahoma City Thunder.
+      - name: seasons_played
+        description: "Count of seasons played by the NBA team."
+      - name: playoff_appearances
+        description: "Total number of playoff appearances by the NBA team."
+      - name: playoff_appearance_pct
+        description: >-
+          Percentage of seasons in which the NBA team made the playoffs, calculated as
+          (playoff_appearances / seasons_played) * 100%.

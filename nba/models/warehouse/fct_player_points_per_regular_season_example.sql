@@ -5,7 +5,8 @@ WITH source AS (
         player_id,       -- Unique identifier for each player
         player_name,     -- Name of the player
         season,          -- NBA season
-        points,          -- Points scored by the player
+        total_points,    -- Total Points scored by the player
+        avg_points,      -- Average Points scored by the player
         game_type        -- Type of the game (e.g., "Regular Season", "Playoffs")
     FROM
         {{ ref('player_game_logs_agg_example') }} -- Reference to the aggregated player game logs table
@@ -18,16 +19,17 @@ most_points_per_regular_season as (
         -- Concatenate player name with season, extracting the last two digits of the season start year
         -- and removing any spaces, then wrapping the season in parentheses
         CONCAT(player_name, ' (', REPLACE(SUBSTRING(season, 3, 6), ' ', ''), ')') AS player_season,
-        points
+        total_points,
+        avg_points
     FROM 
         source
     WHERE
         game_type = 'Regular Season' -- Filter the data to include only regular season games
-    ORDER BY 
-        points DESC
 )
 
 SELECT 
     *
 FROM 
     most_points_per_regular_season
+ORDER BY 
+    total_points DESC
