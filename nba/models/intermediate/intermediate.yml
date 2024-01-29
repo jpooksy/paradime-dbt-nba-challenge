@@ -2,10 +2,10 @@ version: 2
 models:
   - name: player_game_logs_agg_example
     description: >-
-      This model aggregates stg_player_game_logs.sql for regular season and playoff
-      games.  It calculates various statistics for each player during a season,
-      And groups the data by season (example: 2022-23) and game_type (example:
-      Regular Season, Playoffs)
+      This model aggregates stg_player_game_logs.sql for regular season and
+      playoff games.  It calculates various statistics for each player during a
+      season, And groups the data by season (example: 2022-23) and game_type
+      (example: Regular Season, Playoffs)
     columns:
       - name: player_id
         description: Unique identifier for the player.
