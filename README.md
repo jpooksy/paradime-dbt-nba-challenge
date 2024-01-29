@@ -1,11 +1,11 @@
 Findings:
 
-![image](https://github.com/jpooksy/dbt_Data_Modeling_Challenge_NBA/assets/107123308/87614c86-73c3-4bf8-b944-f65b234c81cd)
+![playoff_appearances_by_team](https://github.com/jpooksy/dbt_Data_Modeling_Challenge_NBA/assets/107123308/fdc56fac-6f30-4f81-b8aa-f6b1c181dc07)
 
-![image](https://github.com/jpooksy/dbt_Data_Modeling_Challenge_NBA/assets/107123308/54891114-b3d3-4bd6-9212-9508ce2eee4b)
+![Highest Playoff Win Percentage by Player (Minimum 50 Playoff Games)](https://github.com/jpooksy/dbt_Data_Modeling_Challenge_NBA/assets/107123308/781c8d65-62cd-40a0-9841-dbe77b4d85e2)
 
-![image](https://github.com/jpooksy/dbt_Data_Modeling_Challenge_NBA/assets/107123308/26f3ff47-944a-4318-93dc-4cb18439adae)
+![Most NBA Players by University](https://github.com/jpooksy/dbt_Data_Modeling_Challenge_NBA/assets/107123308/c1f697e7-2838-4966-86d7-13b53ec817ac)
 
-![image](https://github.com/jpooksy/dbt_Data_Modeling_Challenge_NBA/assets/107123308/0cbcc078-bffb-4e12-912d-d1ee863d04ac)
+![Most Points Scored by Player in NBA Regular Season](https://github.com/jpooksy/dbt_Data_Modeling_Challenge_NBA/assets/107123308/a3f0f139-8ccb-4b93-9d1b-11b9839570cd)
 
-![image](https://github.com/jpooksy/dbt_Data_Modeling_Challenge_NBA/assets/107123308/006586d9-700b-4389-a7a4-dd05768ccb94)
+![Most points Scored by Player in NBA Playoff Season](https://github.com/jpooksy/dbt_Data_Modeling_Challenge_NBA/assets/107123308/e6cef433-eb1b-4ab7-80c0-1ee022eb4fd3)
