@@ -8,4 +8,4 @@ Findings:
 
 ![image](https://github.com/jpooksy/dbt_Data_Modeling_Challenge_NBA/assets/107123308/0cbcc078-bffb-4e12-912d-d1ee863d04ac)
 
-![image](https://github.com/jpooksy/dbt_Data_Modeling_Challenge_NBA/assets/107123308/006586d9-700b-4389-a7a4-dd05768ccb94)
+![Most points Scored by Player in NBA Playoff Season](https://github.com/jpooksy/dbt_Data_Modeling_Challenge_NBA/assets/107123308/d4577472-c603-4f6c-8cf1-43263b0149f3)
