@@ -95,6 +95,9 @@ models:
           became the Oklahoma City Thunder in 2008-09 In other words, the
           playoff metrics for the Oklahoma City Thunder  INCLUDE the playoff
           metrics from The Seattle Supersonics 
+        meta:
+          dimension:
+            type: string
       - name: seasons_played
         description: Count of seasons played by the NBA team.
         meta:
