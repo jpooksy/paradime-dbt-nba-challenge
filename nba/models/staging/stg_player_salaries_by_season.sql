@@ -2,7 +2,7 @@ WITH source AS (
     SELECT 
         *
     FROM 
-        public.player_salaries
+        public.player_salaries_by_season
 ),
 
 renamed AS (

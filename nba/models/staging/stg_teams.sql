@@ -7,7 +7,7 @@ WITH source AS (
 
 renamed AS (
     SELECT
-        id as team_id, -- Assuming 'team_id' is the correct column name
+        id as team_id,
         full_name,
         abbreviation as team_name_abbreviation,
         nickname,

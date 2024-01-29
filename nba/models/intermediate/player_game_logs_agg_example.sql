@@ -40,8 +40,10 @@ WITH player_game_logs_agg AS (
         -- Total turnovers committed by the player
         SUM(turnovers) AS turnovers,
         -- Total points scored by the player
-        SUM(points) AS points,
+        SUM(points) AS total_points,
         -- Plus-minus statistic for the player
+        AVG(points) AS avg_points,
+        -- Plus-minus statistic for the player 
         SUM(plus_minus) AS plus_minus,
         -- Total minutes played by the player
         SUM(mins_played) AS mins_played,
@@ -53,7 +55,7 @@ WITH player_game_logs_agg AS (
         SUM(CASE WHEN mins_played > 0 THEN 1 ELSE 0 END) AS games_played_counter
     FROM 
         -- Reference to the source data table containing player game logs
-        {{ ref('source_player_game_logs') }}
+        {{ ref('stg_player_game_logs') }}
     GROUP BY 
         player_id, player_name, season, game_type
 )
