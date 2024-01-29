@@ -97,12 +97,12 @@ models:
           metrics from The Seattle Supersonics 
         meta:
           dimension:
-            type: string
+            type: number
       - name: seasons_played
         description: Count of seasons played by the NBA team.
         meta:
           dimension:
-            type: string
+            type: number
       - name: playoff_appearances
         description: Total number of playoff appearances by the NBA team.
         meta:
