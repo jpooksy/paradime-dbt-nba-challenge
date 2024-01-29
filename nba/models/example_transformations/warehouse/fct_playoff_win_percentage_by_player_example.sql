@@ -8,6 +8,8 @@ WITH PlayoffStats AS (
         {{ ref('stg_player_game_logs') }}
     WHERE
         game_type = 'Playoffs'
+    AND
+        mins_played > 0
     GROUP BY
         player_id,
         player_name

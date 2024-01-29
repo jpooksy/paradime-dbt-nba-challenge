@@ -2,8 +2,9 @@ WITH source AS (
     SELECT 
         *
     FROM 
-        public.player_game_logs
+        {{ source('NBA', 'PLAYER_GAME_LOGS') }}
 ),
+
 
 renamed AS (
     SELECT

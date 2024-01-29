@@ -1,8 +1,8 @@
 WITH source AS (
     SELECT 
         *
-    FROM
-        public.common_player_info
+    FROM 
+        {{ source('NBA', 'COMMON_PLAYER_INFO') }}
 ),
 
 renamed AS (

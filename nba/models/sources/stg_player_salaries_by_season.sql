@@ -2,8 +2,9 @@ WITH source AS (
     SELECT 
         *
     FROM 
-        public.player_salaries_by_season
+        {{ source('NBA', 'PLAYER_SALARIES_BY_SEASON') }}
 ),
+
 
 renamed AS (
     SELECT

@@ -1,10 +1,9 @@
 WITH source AS (
     SELECT 
-        * 
+        *
     FROM 
-        public.team_stats_by_season
+        {{ source('NBA', 'TEAM_STATS_BY_SEASON') }}
 ),
-
 renamed AS (
     SELECT 
         team_id,

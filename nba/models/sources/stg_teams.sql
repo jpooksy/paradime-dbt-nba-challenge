@@ -1,8 +1,8 @@
 WITH source AS (
     SELECT 
-        * 
+        *
     FROM 
-        public.teams
+        {{ source('NBA', 'TEAMS') }}
 ),
 
 renamed AS (

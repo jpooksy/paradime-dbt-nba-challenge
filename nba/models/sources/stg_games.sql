@@ -2,8 +2,9 @@ WITH source AS (
     SELECT 
         *
     FROM 
-        public.games
-), 
+        {{ source('NBA', 'GAMES') }}
+),
+
 
 renamed AS (
     SELECT 
