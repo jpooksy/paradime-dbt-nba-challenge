@@ -1,8 +1,8 @@
-with source as (
-    select 
+WITH source AS (
+    SELECT 
         *
-    from 
-        public.team_spend_by_season
+    FROM 
+        {{ source('NBA', 'TEAM_SPEND_BY_SEASON') }}
 ),
 
 renamed as (
