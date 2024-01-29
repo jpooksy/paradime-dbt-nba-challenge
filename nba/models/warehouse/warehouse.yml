@@ -115,3 +115,33 @@ models:
         meta:
           dimension:
             type: number
+
+  - name: fct_playoff_win_percentage_by_player_example.sql
+    description: >
+      This model calculates the playoff win percentage for NBA players who have played at least 50 playoff games. It includes player IDs, names, total playoff games, number of playoff wins, and the calculated win percentage.
+    columns:
+      - name: player_id
+        description: The unique identifier of the player.
+        meta:
+          dimension:
+            type: number
+      - name: player_name
+        description: The full name of the player.
+        meta:
+          dimension:
+            type: string
+      - name: playoff_wins
+        description: The total number of playoff wins for the player.
+        meta:
+          dimension:
+            type: number
+      - name: total_playoff_games
+        description: The total number of playoff games played by the player.
+        meta:
+          dimension:
+            type: number
+      - name: win_percentage
+        description: The win percentage of the player in playoff games, calculated from total_playoff_games and playoff_wins
+        meta:
+          dimension:
+            type: number
