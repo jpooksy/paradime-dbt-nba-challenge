@@ -115,11 +115,11 @@ models:
         meta:
           dimension:
             type: number
-
   - name: fct_playoff_games_by_player_example
     description: >
-      This model calculates NBA players with the most playoff appearances, as well as the total amount of playoff appearances. 
-      Games where player didn't particpate (played 0 minutes) are excluded from the results. 
+      This model calculates NBA players with the most playoff appearances, as
+      well as the total amount of playoff appearances.  Games where player
+      didn't particpate (played 0 minutes) are excluded from the results. 
     columns:
       - name: player_id
         description: The unique identifier of the player.
@@ -142,7 +142,9 @@ models:
           dimension:
             type: number
       - name: win_percentage
-        description: The win percentage of the player in playoff games, calculated from total_playoff_games and playoff_wins
+        description: >-
+          The win percentage of the player in playoff games, calculated from
+          total_playoff_games and playoff_wins
         meta:
           dimension:
             type: number

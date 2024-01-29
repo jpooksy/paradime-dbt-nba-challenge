@@ -107,12 +107,16 @@ models:
           dimension:
             type: string
       - name: team_abbreviation
-        description: Three-letter abbreviated name of the player's current or last NBA team.
+        description: >-
+          Three-letter abbreviated name of the player's current or last NBA
+          team.
         meta:
           dimension:
             type: string
       - name: team_code
-        description: the team_code of the player's current or last NBA team. Similar to a unique identifier.
+        description: >-
+          the team_code of the player's current or last NBA team. Similar to a
+          unique identifier.
         meta:
           dimension:
             type: string
