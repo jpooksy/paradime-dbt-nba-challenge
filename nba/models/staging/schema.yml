@@ -680,7 +680,7 @@ models:
         meta:
           dimension:
             type: number
-  - name: team_stats_by_season
+  - name: stg_team_stats_by_season
     description: >
       This table provides season-by-season statistical data for NBA teams from 1946 - 2023, including their performance and various game stats. Teams occasionally change cities or names but retain the same team_id, e.g., the "Seattle Supersonics" becoming the "Oklahoma City Thunder". 
       This data set is sourced from the official NBA API. Learn more at https://github.com/swar/nba_api.
