@@ -535,153 +535,8 @@ models:
         meta:
           dimension:
             type: string
-  - name: stg_team_spend_by_season
-    description: >-
-      This table contains financial information about NBA teams spending per
-      season, including payroll details and luxury tax considerations.  Team
-      spend data available from the 1990 - 2023 nba season. Understanding the
-      NBA luxury tax is difficult. Hint: If you're trying to understand the
-      total amount that a team spent in a given year,  simply sum the following
-      values: TEAM_PAYROLL + LUXURY_TAX_BILL
-
-      This data set comes from the official NBA api. You can learn more here.
-      https://github.com/swar/nba_api
-    columns:
-      - name: team_id
-        description: Unique identifier for the team.
-        meta:
-          dimension:
-            type: number
-      - name: team_city
-        description: The city where the team is based.
-        meta:
-          dimension:
-            type: string
-      - name: team_name
-        description: The name of the team.
-        meta:
-          dimension:
-            type: string
-      - name: full_name
-        description: >-
-          The full official name of the team, typically including the city and
-          team name.
-        meta:
-          dimension:
-            type: string
-      - name: season
-        description: >-
-          The NBA season for which the financial data is applicable. This
-          columns, along with team_id, is useful when joining data from
-          stg_games, stg_player_game_logs, stg_team_stats, etc. 
-        meta:
-          dimension:
-            type: string
-      - name: team_payroll
-        description: >-
-          Total expenditure on player salaries by the team for the specified
-          season.
-        meta:
-          dimension:
-            type: number
-      - name: active_payroll
-        description: >-
-          Total active payroll, indicating the sum of salaries for currently
-          active players on the team.  This data is relevant becasue not all
-          team payroll is for active players.  Sometimes, a portion teams
-          payroll is allocated to players previously on the team's roster
-          (dead_payroll)"
-        meta:
-          dimension:
-            type: number
-      - name: dead_payroll
-        description: >-
-          Total dead payroll, indicating the sum of salaries for players no
-          longer active on the team. This data is relevant becasue not all team
-          payroll is for active players.  Sometimes, a portion teams payroll is
-          allocated to players previously on the team's roster (dead_payroll)
-        meta:
-          dimension:
-            type: number
-      - name: luxury_tax_payroll
-        description: >-
-          Total payroll amount that is subject to luxury tax.  Luxury tax
-          payroll, commonly known as 'luxury tax' occurs if the team's payroll
-          exceeds the threashhold of the nba's annual saraly cap. Learn more
-          about the NBA's luxury tax:
-          https://en.wikipedia.org/wiki/Luxury_tax_(sports)#National_Basketball_Association_(NBA).
-        meta:
-          dimension:
-            type: number
-      - name: luxury_tax_space
-        description: >-
-          The available financial space the team has before reaching the luxury
-          tax threshold.
-        meta:
-          dimension:
-            type: number
-      - name: luxury_tax_bill
-        description: >-
-          The total amount of luxury tax the team is liable for in the specified
-          season.
-        meta:
-          dimension:
-            type: number
-  - name: stg_teams
-    description: >-
-      This table contains non-statistical information about NBA teams per season
-      from 1946 - 2023, including their founding year and location details. This
-      teams data is current, meaning that only the team's current city and state
-      is available.  Example: There's no team called 'Seattle Supersonics'. 
-      Instead, that team is called 'Oklahoma City Thunder' because that's where
-      the team (indicated by the team_id) currently resides.
-
-      This data set comes from the official NBA api. You can learn more here.
-      https://github.com/swar/nba_api
-    columns:
-      - name: team_id
-        description: Unique identifier for the team.
-        meta:
-          dimension:
-            type: number
-      - name: full_name
-        description: Full name of the team, typically including the city and the team name.
-          This column provides the complete name used to identify the NBA team.
-        meta:
-          dimension:
-            type: string
-      - name: team_name_abbreviation
-        description: The abbreviated form of the team name. 
-          This column contains a shortened version of the team's name.
-        meta:
-          dimension:
-            type: string
-      - name: nickname
-        description: The commonly used nickname or short name of the team. 
-          This column provides the commonly recognized name of the NBA team.
-        meta:
-          dimension:
-            type: string
-      - name: city
-        description: The city where the team is based. 
-          This column specifies the city in which the NBA team's home games are played.
-        meta:
-          dimension:
-            type: string
-      - name: state
-        description: The state or province where the team is located. 
-          This column indicates the geographical location of the NBA team within a state or province.
-        meta:
-          dimension:
-            type: string
-      - name: year_founded
-        description: The year when the team was founded or established. 
-          This column contains the founding year of the NBA team, indicating when it was originally established.
-        meta:
-          dimension:
-            type: number
   - name: stg_team_stats_by_season
-    description: >
+    description: >-
       This table provides season-by-season statistical data for NBA teams from 1946 - 2023, including their performance and various game stats. Teams occasionally change cities or names but retain the same team_id, e.g., the "Seattle Supersonics" becoming the "Oklahoma City Thunder". 
       This data set is sourced from the official NBA API. Learn more at https://github.com/swar/nba_api.
     columns:
@@ -820,4 +675,153 @@ models:
         meta:
           dimension:
             type: number
+  - name: stg_teams
+    description: >-
+      This table contains non-statistical information about NBA teams per season
+      from 1946 - 2023, including their founding year and location details. This
+      teams data is current, meaning that only the team's current city and state
+      is available. Example: There's no team called 'Seattle Supersonics'. 
+      Instead, that team is called 'Oklahoma City Thunder' because that's where
+      the team (indicated by the team_id) currently resides.
 
+      This data set comes from the official NBA api. You can learn more here.
+      https://github.com/swar/nba_api
+    columns:
+      - name: team_id
+        description: Unique identifier for the team.
+        meta:
+          dimension:
+            type: number
+      - name: full_name
+        description: Full name of the team, typically including the city and the team name.
+          This column provides the complete name used to identify the NBA team.
+        meta:
+          dimension:
+            type: string
+      - name: team_name_abbreviation
+        description: The abbreviated form of the team name. 
+          This column contains a shortened version of the team's name.
+        meta:
+          dimension:
+            type: string
+      - name: nickname
+        description: The commonly used nickname or short name of the team. 
+          This column provides the commonly recognized name of the NBA team.
+        meta:
+          dimension:
+            type: string
+      - name: city
+        description: The city where the team is based. 
+          This column specifies the city in which the NBA team's home games are played.
+        meta:
+          dimension:
+            type: string
+      - name: state
+        description: The state or province where the team is located. 
+          This column indicates the geographical location of the NBA team within a state or province.
+        meta:
+          dimension:
+            type: string
+      - name: year_founded
+        description: The year when the team was founded or established. 
+          This column contains the founding year of the NBA team, indicating when it was originally established.
+        meta:
+          dimension:
+            type: number
+
+
+
+
+  - name: stg_team_spend_by_season
+    description: >-
+      This table contains financial information about NBA teams spending per
+      season, including payroll details and luxury tax considerations.  Team
+      spend data available from the 1990 - 2023 nba season. Understanding the
+      NBA luxury tax is difficult. Hint: If you're trying to understand the
+      total amount that a team spent in a given year,  simply sum the following
+      values: TEAM_PAYROLL + LUXURY_TAX_BILL
+
+      This data set comes from the official NBA api. You can learn more here.
+      https://github.com/swar/nba_api
+    columns:
+      - name: team_id
+        description: Unique identifier for the team.
+        meta:
+          dimension:
+            type: number
+      - name: team_city
+        description: The city where the team is based.
+        meta:
+          dimension:
+            type: string
+      - name: team_name
+        description: The name of the team.
+        meta:
+          dimension:
+            type: string
+      - name: full_name
+        description: >-
+          The full official name of the team, typically including the city and
+          team name.
+        meta:
+          dimension:
+            type: string
+      - name: season
+        description: >-
+          The NBA season for which the financial data is applicable. This
+          columns, along with team_id, is useful when joining data from
+          stg_games, stg_player_game_logs, stg_team_stats, etc. 
+        meta:
+          dimension:
+            type: string
+      - name: team_payroll
+        description: >-
+          Total expenditure on player salaries by the team for the specified
+          season.
+        meta:
+          dimension:
+            type: number
+      - name: active_payroll
+        description: >-
+          Total active payroll, indicating the sum of salaries for currently
+          active players on the team.  This data is relevant becasue not all
+          team payroll is for active players.  Sometimes, a portion teams
+          payroll is allocated to players previously on the team's roster
+          (dead_payroll)"
+        meta:
+          dimension:
+            type: number
+      - name: dead_payroll
+        description: >-
+          Total dead payroll, indicating the sum of salaries for players no
+          longer active on the team. This data is relevant becasue not all team
+          payroll is for active players.  Sometimes, a portion teams payroll is
+          allocated to players previously on the team's roster (dead_payroll)
+        meta:
+          dimension:
+            type: number
+      - name: luxury_tax_payroll
+        description: >-
+          Total payroll amount that is subject to luxury tax.  Luxury tax
+          payroll, commonly known as 'luxury tax' occurs if the team's payroll
+          exceeds the threashhold of the nba's annual saraly cap. Learn more
+          about the NBA's luxury tax:
+          https://en.wikipedia.org/wiki/Luxury_tax_(sports)#National_Basketball_Association_(NBA).
+        meta:
+          dimension:
+            type: number
+      - name: luxury_tax_space
+        description: >-
+          The available financial space the team has before reaching the luxury
+          tax threshold.
+        meta:
+          dimension:
+            type: number
+      - name: luxury_tax_bill
+        description: >-
+          The total amount of luxury tax the team is liable for in the specified
+          season.
+        meta:
+          dimension:
+            type: number
+ 
