@@ -1,5 +1,10 @@
+# dbt™ Data Modeling Challenge - NBA Edition
+
+## Requirements
+After submissing 
+
 # dbt™ Data Modeling Challenge - NBA Edition: Example Submission
-An exemplar submission for the dbt™ data modeling challenge - NBA Edition, showcasing techniques eligible for cash prizes. Feel free to use this template for your submission, but ensure your insights are unique!
+here's an example project that fulfills all requirements and would be elligble eligible for cash prizes. Feel free to use this template for your submission, but ensure your insights are unique!
 
 ## Table of Contents
 1. [Introduction](#introduction)
@@ -16,7 +21,7 @@ An exemplar submission for the dbt™ data modeling challenge - NBA Edition, sho
 5. [Conclusions](#conclusions)
 
 ## Introduction
-Explore my project for the _dbt™ data modeling challenge - NBA Edition_. Hosted by [Paradime](https://www.paradime.io/), this project dives into the analysis and visualization of NBA statistics, designed for basketball enthusiasts and analysts.
+Explore my project for the _dbt™ data modeling challenge - NBA Edition_, Hosted by [Paradime](https://www.paradime.io/)! This project dives into the analysis and visualization of NBA statistics, designed for basketball enthusiasts and analysts.
 
 ## Data Sources
 My analysis leverages three key NBA datasets from Paradime:
