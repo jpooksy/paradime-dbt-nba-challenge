@@ -55,7 +55,7 @@ The Spurs have only missed the playoffs 9 time!
 ### Player Playoff Games
 Assessment of NBA players with the highest number of playoff game wins and their win percentages.
 
-![Player Playoff Games](https://github.com/jpooksy/dbt_Data_Modeling_Challenge_NBA/assets/107123308/4c68a500-b165-4e1c-a81e-152956ac1c11)
+![Player Playoff Games](https://github.com/jpooksy/dbt_Data_Modeling_Challenge_NBA/assets/107123308/ed5b47e4-f19b-4e97-977b-8853d37a2f82)
 
 *Insights:* 
 LeBron James has the most playoff wins of any player, but here's what's most interesting: 
