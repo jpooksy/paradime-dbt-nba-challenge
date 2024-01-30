@@ -1,5 +1,7 @@
 # Example Submission: dbt™ data modeling challenge - NBA Edition 
-Note: You can copy this format if you'd like! 
+Here's an example of a high-quality project submission that would be in contention top win a cash prize ($1500, $1000, or $500). 
+You can copy this format if you'd like, but be sure to come up with your own insights! 
+
 ## Introduction
 Welcome to my final project for the _dbt™ data modeling challenge - NBA Edition_ hosted by [Paradime](https://www.paradime.io/)! 
 This project aims to analyze and visualize interesting NBA statistics, and it's geared towards NBA fans. 
