@@ -60,7 +60,7 @@ a member of the [NBA Greatest 75 Team](https://www.nba.com/news/nba-75th-anniver
 
 *Insights:* 
 LeBron James has the most playoff wins of any player, but here's what's most interesting: 
-Of the 25 players with the most playoff appearances, only 12 of them are members of the [NBA Greatest 75 team](https://www.nba.com/news/nba-75th-anniversary-team-announced). 
+Of the 25 players with the most playoff wins, only 12 of them are members of the [NBA Greatest 75 team](https://www.nba.com/news/nba-75th-anniversary-team-announced). 
 There are several players listed that impact playoff wins and compliment their team's best players, but aren't known 
 as on the the all time greats, such as: Derek Fisher, Robert Horry, Danny Green. 
 
