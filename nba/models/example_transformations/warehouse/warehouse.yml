@@ -127,24 +127,27 @@ models:
           dimension:
             type: number
       - name: player_name
-        description: The full name of the player.
+        description: >-
+          The full name of the player. If a player has a '*' after their name, 
+          it indicate's that they're a member of the nba greates 75 team 
+          (one of the best 75 players of all time)
         meta:
           dimension:
             type: string
-      - name: playoff_wins
-        description: The total number of playoff wins where player participated.
+      - name: playoff_games
+        description: The total number of playoff games where player participated.
         meta:
           dimension:
             type: number
-      - name: total_playoff_games
-        description: The total number of playoff games where player participated.
+      - name: playoff_wins
+        description: The total number of playoff games where player participated and won.
         meta:
           dimension:
             type: number
       - name: win_percentage
         description: >-
           The win percentage of the player in playoff games, calculated from
-          total_playoff_games and playoff_wins
+          playoff_wins / playoff_games
         meta:
           dimension:
             type: number

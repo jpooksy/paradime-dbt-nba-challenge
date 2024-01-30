@@ -1,8 +1,8 @@
-WITH PlayoffStats AS (
+WITH playoff_stats AS (
     SELECT
         player_id,
         player_name,
-        COUNT(*) AS total_playoff_games,
+        COUNT(*) AS playoff_games,
         SUM(CASE WHEN win_loss = 'W' THEN 1 ELSE 0 END) AS playoff_wins
     FROM
         {{ ref('stg_player_game_logs') }}
@@ -14,24 +14,45 @@ WITH PlayoffStats AS (
         player_id,
         player_name
 ),
-PlayoffWinPercentage AS (
+playoff_win_percentage AS (
     SELECT
         player_id,
         player_name,
-        total_playoff_games,
+        playoff_games,
         playoff_wins,
-        (CAST(playoff_wins AS FLOAT) / total_playoff_games) AS win_percentage
+        (CAST(playoff_wins AS FLOAT) / playoff_games) AS win_percentage
     FROM
-        PlayoffStats
+        playoff_stats
+), 
+
+nba_greatest AS (
+    SELECT
+        player_id,
+        greatest_75_member
+    FROM
+        {{ ref('stg_common_player_info') }}
+),
+
+joined AS (
+    SELECT
+        pwp.*,
+        ng.greatest_75_member
+    FROM 
+        playoff_win_percentage pwp
+    JOIN nba_greatest ng ON
+        pwp.player_id = ng.player_id
 )
 
 SELECT
     player_id,
-    player_name,
+    CASE 
+        WHEN greatest_75_member = 'true' THEN player_name || '*'
+        ELSE player_name
+    END AS player_name,
+    playoff_games,
     playoff_wins,
-    total_playoff_games,
     win_percentage
 FROM
-    PlayoffWinPercentage
+    joined
 ORDER BY
-    total_playoff_games DESC, playoff_wins DESC
+    playoff_games DESC, playoff_wins DESC
