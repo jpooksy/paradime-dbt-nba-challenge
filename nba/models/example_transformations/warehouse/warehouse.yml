@@ -129,8 +129,8 @@ models:
       - name: player_name
         description: >-
           The full name of the player. If a player has a '*' after their name, 
-          it indicate's that they're a member of the nba greates 75 team 
-          (one of the best 75 players of all time)
+          it indicate's that they're a member of the nba greates 75 team  (one
+          of the best 75 players of all time)
         meta:
           dimension:
             type: string
