@@ -1,101 +1,57 @@
-# Example Submission: dbt™ data modeling challenge - NBA Edition 
-Here's an example of a high-quality project submission that would be in contention top win a cash prize ($1500, $1000, or $500). 
-You can copy this format if you'd like, but be sure to come up with your own insights! 
+# dbt™ Data Modeling Challenge - NBA Edition: Example Submission
+This example illustrates a high-quality submission for the dbt™ data modeling challenge - NBA Edition, eligible for cash prizes. Feel free to adopt this format, but ensure your insights are original!
 
 ## Introduction
-Welcome to my final project for the _dbt™ data modeling challenge - NBA Edition_ hosted by [Paradime](https://www.paradime.io/)! 
-This project aims to analyze and visualize interesting NBA statistics, and it's geared towards NBA fans. 
+Welcome to my submission for the _dbt™ data modeling challenge - NBA Edition_, hosted by [Paradime](https://www.paradime.io/). This project delves into analyzing and visualizing compelling NBA statistics, catering to basketball enthusiasts.
 
-## Data sources
-In my final project, I used three of the six NBA data sets provided by Paradime:
+## Data Sources
+In this project, I utilized three key NBA data sets provided by Paradime:
 - *PLAYER_GAME_LOGS*
 - *TEAM_STATS_BY_SEASON*
 - *COMMON_PLAYER_INFO*
 
 ## Methodology
-This section describes the tools (e.g., dbt™, SQL, Python) and techniques used for data extraction, transformation, and visualization.
-For my final project I used the following:
-- **Tools**
-  - Paradime (SQL, dbt™, and .csv exports)
-  - Snowflake (Storage and Compute)
-  - Google Sheets (Vizualization)
-- **Techniques**:
-  - Used SQL + dbt™ to transform _stg_player_game_logs_ into player stats by season (_player_game_logs_agg_example.sql_). 
-    This transformation helped find players with the most points scored in a regular season and playoff throughout NBA history.
-  - Used SQL + dbt™ to transform _stg_player_game_logs_ and _stg_common_player_info_ into playoff games by player (fct_playoff_games_by_player_example.sql_)
-  - Used SQL + dbt™ to transform _stg_common_player_info_ into players by college (_fct_players_by_college_example.sql_)
-    This transformation helped me find colleges/universities with the most nba players throughout NBA history.
-  - Used Used SQL + dbt™ to transform _stg_team_stats_by_season_ into playoff appearances by NBA team (_fct_playoff_appearances_by_team_)
-    This transformatoin helped me find discover the NBA teams with the most playoff appearances and their playoff appearance. 
+### Tools Utilized
+- Paradime (for SQL, dbt™, and .csv exports)
+- Snowflake (for Storage and Compute)
+- Google Sheets (for Visualization)
 
-## Vizualizations
-**Playoff Appearances by Team**
+### Techniques Applied
+- Transformation of _stg_player_game_logs_ into seasonal player stats using SQL and dbt™.
+- Combination of _stg_player_game_logs_ and _stg_common_player_info_ to analyze playoff games by player.
+- Analysis of _stg_common_player_info_ to identify NBA players by college.
+- Examination of _stg_team_stats_by_season_ to assess playoff appearances by NBA teams.
 
-This vizualization shows all 30 NBA teams and their respective playoff appearances, and playoff appearance percentage (seasons played/playoff appearance seasons)
+## Visualizations
+### Playoff Appearances by Team
+This visualization presents the playoff appearances of all 30 NBA teams, along with their playoff appearance percentages.
 
-![Playoff Appearances by Team](https://github.com/jpooksy/dbt_Data_Modeling_Challenge_NBA/assets/107123308/1630799f-5191-4f16-b5db-17494284b295)
+*Insights:* 
+The Los Angeles Lakers lead in playoff appearances, while the San Antonio Spurs showcase a high playoff appearance percentage.
 
-*Insights*
-The Los Angeles Lakers have the most playoff appearances in NBA history (63), and the highest playoff appearance percentage (83%). 
-In other words, the Lakers have made the playoffs in 63 of their 76 NBA seasons!
-You'll notice that the San Antonion Spurs have the secon highest playoff appearance percentage (81%); They've only missed the playoffs 9 times! 
+### Playoff Games by Player
+Analyzing the NBA players with the most playoff game wins and their win percentages.
 
+*Insights:* 
+LeBron James stands out for his playoff appearances, highlighting the importance of both star and role players.
 
-**Playoff Games by Player**
+### Most Points Scored by Player in NBA Playoff Season
+Showcasing players with the highest scores in playoff seasons.
 
-This vizualization shows NBA players with the most total playoff game wins, as well as their playoff game win percentage. 
-Playoff games where player didn't particpate (played 0 minutes) are excluded from the results. The "*" next to the player name indicates if
-the player is part of the [NBA Greatest 75 Team](https://www.nba.com/news/nba-75th-anniversary-team-announced) (One of the 75 best players of all time).
+*Insights:* 
+Michael Jordan, LeBron James, and Kobe Bryant emerge as top performers in playoff point scoring.
 
-![Playoff Games by Player](https://github.com/jpooksy/dbt_Data_Modeling_Challenge_NBA/assets/107123308/67f7fb5a-49d6-4be9-beb3-a05a33e9274b)
+### Most Points Scored by Player in NBA Regular Season
+Focusing on players with the highest scores in regular seasons.
 
-*Insights*
-No Surprise, Lebron James has the most playoff appearance of any NBA player in history. He's arguably the greatest player of all time, 
-but there's many more insights to gather from this: Of the 25 players with the most playoff appearances, only 12 of them are members 
-of the [NBA Greatest 75 team](https://www.nba.com/news/nba-75th-anniversary-team-announced). There are several players listed that impact
-playoff wins, compliment their team's bestplayers, but aren't known as on the the all time greats (ex. Derek Fisher, Robert Horry, Danny Green). 
-Conclusion - Every NBA team needs fantastic role players! 
+*Insights:* 
+Wilt Chamberlain and Michael Jordan dominate in regular-season scoring achievements.
 
+### Most NBA Players by University
+Displaying universities producing the most NBA players.
 
-**Most Points Scored by Player in NBA Playoff Season**
-
-This vizualization shows nba players who have scored the most points in any playoff season, as well as their avg. points per per game 
-in that playoff season
-
-![Most Points Scored by Player in NBA Playoff Season](https://github.com/jpooksy/dbt_Data_Modeling_Challenge_NBA/assets/107123308/83e7f565-5383-4864-a673-df58262204d9)
-
-*Insights*
-No surprise, Michael Jordan has the most playoff points of any player in any playoff season, but more impressive than that, 
-he also averaged the most PPG in a playoff season during his championship run in 1992-93! 
-Additionally, only 3 players have 3 playoff season within the all-time top 25: Michael Jordan, Lebron James, and Kobe Bryant! 
-
-
-**Most Points Scored by Player in NBA Regular Season**
-
-This vizualization shows nba players who have scored the most points in any regular season, as well as their avg. points per per game 
-in that regular season
-
-![Most Points Scored by Player in NBA Regular Season](https://github.com/jpooksy/dbt_Data_Modeling_Challenge_NBA/assets/107123308/42bb412b-231c-4d55-8b6a-70f61fea1543)
-
-*Insights*
-Simply put, Wilt Champerlain is one of the best regular season players of all time. In addition to having one of the most points scored 
-in any regular season ever (4,029), he also has six season in the top 25. The only other player with 6 top 25 seasons is Michael Jordan.
-
-
-**Most NBA Players by University**
-
-This vizualization shows colleges and universities who have produced the most NBA players. 
-
-![Most NBA Players by University](https://github.com/jpooksy/dbt_Data_Modeling_Challenge_NBA/assets/107123308/bcb76289-2584-4dfe-9c5c-a2de227621f2)
-
-*Insights*
-Kentucky has produced the most NBA players in NBA history by a significant margin.... Go Wildcats! 
-
+*Insights:* 
+Kentucky is a notable contributor to the NBA talent pool.
 
 ## Conclusions
-This project successfully extracts significant insights from NBA data that NBA fans would find interesting, such as: 
-
-- The dominance of teams like the Los Angeles Lakers and the San Antonio Spurs in playoff appearances
-- The critical role of "role" players, as highlighted by the playoff games by player insights,
-- The extraordinary achievements of players like LeBron James, Michael Jordan, and Wilt Chamberlain in both playoff and regular seasons,
-- The influence of universities like Kentucky in producing NBA talent.
+This project highlights significant insights for NBA fans, including the dominance of certain teams in playoffs, the pivotal roles of various players, and the contributions of universities in nurturing NBA talent.
