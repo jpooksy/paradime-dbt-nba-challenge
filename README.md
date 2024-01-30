@@ -16,7 +16,7 @@ An exemplar submission for the dbt™ data modeling challenge - NBA Edition, sho
 5. [Conclusions](#conclusions)
 
 ## Introduction
-Explore my project for the _dbt™ data modeling challenge - NBA Edition_. Hosted by [Paradime](https://www.paradime.io/), this project dives into the analysis and visualization of NBA statistics, designed for basketball fans and analysts.
+Explore my project for the _dbt™ data modeling challenge - NBA Edition_. Hosted by [Paradime](https://www.paradime.io/), this project dives into the analysis and visualization of NBA statistics, designed for basketball enthusiasts and analysts.
 
 ## Data Sources
 My analysis leverages three key NBA datasets from Paradime:
