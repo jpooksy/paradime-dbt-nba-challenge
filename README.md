@@ -10,17 +10,9 @@ Welcome to the Paradime dbt™ Data Modeling Challenge - NBA Edition!
    - [Kickstart Your Project](#step-4-kickstart-your-project)
 2. [Competition Details](#competition-details)
 3. [Building Your Project](#building-your-project)
-   - [Getting to Know the Paradime Editor](#step-1-getting-to-know-the-paradime-editor)
-   - [Getting to Know the NBA Data Sets](#step-2-getting-to-know-the-nba-data-sets)
-   - [Generating Insights](#step-3-generating-insights)
-   - [Creating Data Visualizations](#creating-data-visualizations)
-   - [Submitting Your Project](#submitting-your-project)
 4. [Example Submission](#dbttm-data-modeling-challenge---nba-edition-example-submission)
-   - [Introduction](#introduction)
-   - [Data Sources](#data-sources)
-   - [Methodology](#methodology)
-   - [Visualizations](#visualizations)
-   - [Conclusions](#conclusions)
+
+---
 
 ## Getting Started
 
@@ -39,17 +31,25 @@ After verification, you'll receive two emails from Paradime:
 - **Access Paradime**: Use the provided credentials to log into your account.
 - **Snowflake Integration**: Add Snowflake credentials (Username, Password, Role, Database) to Paradime.
    ![Configure Snowflake in Paradime](link_to_arcade_screenshot)
-- **Need Help?**: For issues, join the #nba-challenge channel on [Slack](https://paradimers.slack.com/join/shared_invite/zt-1mzax4sb8-jgw~hXRlDHAx~KN0az18bw#/shared-invite/email).
+- **Need Help?**: Join the #nba-challenge channel on [Slack](https://paradimers.slack.com/join/shared_invite/zt-1mzax4sb8-jgw~hXRlDHAx~KN0az18bw#/shared-invite/email) for assistance.
 
 ### Step 4: Kickstart Your Project
 - **Create a New Branch**: Open the Paradime Editor and create a new branch.
 - **Start Developing**: Begin crafting SQL queries, developing dbt™ models, and generating insights!
    ![Start Developing in Paradime](link_to_arcade_screenshot)
 
+[Back to Top](#dbttm-data-modeling-challenge---nba-edition)
+
+---
+
 ## Competition Details
 - **[Entry Requirements](#entry-requirements)**
 - **[Competition Deliverables](#competition-deliverables)**
 - **[Judging Criteria](#judging-criteria)**
+
+[Back to Top](#dbttm-data-modeling-challenge---nba-edition)
+
+---
 
 ## Building Your Project
 
@@ -60,7 +60,7 @@ After verification, you'll receive two emails from Paradime:
 - Exporting Data (for data visualization use only)
 
 ### Step 2: Getting to Know the NBA Data Sets
-Explore [7 NBA data sets](https://github.com/jpooksy/paradime-dbt-nba-challenge/tree/main/nba/models/sources) provided by Paradime, each with primary and foreign keys for insightful analysis. Check out the [staging files](https://github.com/jpooksy/paradime-dbt-nba-challenge/tree/main/nba/models/sources) and [YAML file](https://github.com/jpooksy/paradime-dbt-nba-challenge/blob/main/nba/models/sources/schema.yml) for detailed information on each dataset and corresponding columns.
+Explore [7 NBA data sets](https://github.com/jpooksy/paradime-dbt-nba-challenge/tree/main/nba/models/sources) provided by Paradime, each with primary and foreign keys for insightful analysis. Detailed information about each dataset is available in the [staging files](https://github.com/jpooksy/paradime-dbt-nba-challenge/tree/main/nba/models/sources) and [YAML file](https://github.com/jpooksy/paradime-dbt-nba-challenge/blob/main/nba/models/sources/schema.yml).
 
 ### Step 3: Generating Insights
 Your goal is to build dbt™ models that reveal compelling insights for NBA fans and General Managers. Here are some suggested topics:
@@ -78,7 +78,9 @@ Your goal is to build dbt™ models that reveal compelling insights for NBA fans
     - Data Required: *[team_stats_by_season](https://github.com/jpooksy/dbt_Data_Modeling_Challenge_NBA/blob/main/nba/models/sources/stg_team_stats_by_season.sql)*
 
 ### Creating Data Visualizations
-Use any data visualization tool of your choice. Paradime offers direct integrations with various tools: Power BI, Lightdash, Metabase, Preset, Tableau, Looker. Alternatively, export your dbt™ models to a .csv for spreadsheet visualization. Note: We'll verify if the .csv export matches your dbt™ models.
+Choose any data visualization tool. Paradime has various [BI tool integrations](https://www.paradime.io/integrations) like Power BI, Lightdash, Metabase, Preset, Tableau, and Looker. 
+
+Alternatively, export your dbt™ models to a .csv for spreadsheet visualization. Note: We'll verify if the .csv export matches your dbt™ models.
 
 ### Submitting Your Project
 Submit the following upon completion:
