@@ -50,10 +50,9 @@ After verification, you'll receive two emails from Paradime:
 ## Building Your Project
 
 ### Step 1: Getting to Know the Paradime Editor
-- [Using the Editor]([https://docs.paradime.io/app-help/welcome-to-paradime.io/tutorials/getting-started-with-the-paradime-ide#discover-editor-core-functionalities](https://docs.paradime.io/app-help/welcome-to-paradime.io/tutorials/getting-started-with-the-paradime-ide#discover-editor-core-functionalities))
-- [Working with Git]([https://docs.paradime.io/app-help/welcome-to-paradime.io/tutorials/getting-started-with-the-paradime-ide#working-with-git](https://docs.paradime.io/app-help/welcome-to-paradime.io/tutorials/getting-started-with-the-paradime-ide#working-with-git))
-- [Creating Your First dbt Model]([https://docs.paradime.io/app-help/welcome-to-paradime.io/tutorials/getting-started-with-the-paradime-ide#create-and-run-your-first-dbt-tm-model](https://docs.paradime.io/app-help/welcome-to-paradime.io/tutorials/getting-started-with-the-paradime-ide#create-and-run-your-first-dbt-tm-model))
-- Exporting Data (for data visualization use only)
+- [Using the Editor](https://docs.paradime.io/app-help/welcome-to-paradime.io/tutorials/getting-started-with-the-paradime-ide#discover-editor-core-functionalities)
+- [Working with Git](https://docs.paradime.io/app-help/welcome-to-paradime.io/tutorials/getting-started-with-the-paradime-ide#working-with-git)
+- [Creating Your First dbt Model](https://docs.paradime.io/app-help/welcome-to-paradime.io/tutorials/getting-started-with-the-paradime-ide#create-and-run-your-first-dbt-tm-model)
 
 ### Step 2: Getting to Know the NBA Data Sets
 Explore [7 NBA data sets](https://github.com/jpooksy/paradime-dbt-nba-challenge/tree/main/nba/models/sources) provided by Paradime, each with primary and foreign keys for insightful analysis. Detailed information about each dataset is available in the [staging files](https://github.com/jpooksy/paradime-dbt-nba-challenge/tree/main/nba/models/sources) and [YAML file](https://github.com/jpooksy/paradime-dbt-nba-challenge/blob/main/nba/models/sources/schema.yml).
@@ -77,6 +76,7 @@ Your goal is to build dbt™ models that reveal compelling insights for NBA fans
 Choose any data visualization tool. Paradime has various [BI tool integrations](https://www.paradime.io/integrations) like Power BI, Lightdash, Metabase, Preset, Tableau, and Looker. 
 
 Alternatively, export your dbt™ models to a .csv for spreadsheet visualization. Note: We'll verify if the .csv export matches your dbt™ models.
+[Add screenshot]
 
 ### Submitting Your Project
 Submit the following upon completion:
