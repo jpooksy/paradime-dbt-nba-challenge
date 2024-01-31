@@ -28,7 +28,7 @@ After verification, you'll receive two emails from Paradime:
 ### Step 3: Paradime Account Configuration
 - **Access Paradime**: Use the provided credentials to log into your account. Join the Paradime workspace using the invite email.
 - **Snowflake Integration**: Add Snowflake credentials (Username, Password, Role, Database) to Paradime.
-- **Act Fast - Limited Time Activation**: The links to your Paradime account expire within 24 hours!
+- **Act Fast - Limited Time Activation**: The links to activate your Paradime account expire within 24 hours!
 
 ### Step 4: Kickstart Your Project
 - **Create a New Branch**: Open the Paradime Editor and create a new branch. Your branch name should follow this format: "nba-<your_email>"
@@ -46,6 +46,8 @@ After verification, you'll receive two emails from Paradime:
 
 ---
 ## Building Your Project
+
+Now that you're set up, you have until March 8, 2024 to complete and submit your project!
 
 ### Step 1: Getting to Know the Paradime Editor
 - [Using the Editor](https://docs.paradime.io/app-help/welcome-to-paradime.io/tutorials/getting-started-with-the-paradime-ide#discover-editor-core-functionalities)
