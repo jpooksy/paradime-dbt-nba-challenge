@@ -10,7 +10,7 @@ Welcome to the Paradime dbt™ Data Modeling Challenge - NBA Edition!
    - [Kickstart Your Project](#step-4-kickstart-your-project)
 2. [Competition Details](#competition-details)
 3. [Building Your Project](#building-your-project)
-4. [Example Submission](#dbttm-data-modeling-challenge---nba-edition-example-submission)
+4. [Example Submission](#example-submission)
 
 ---
 
@@ -40,9 +40,9 @@ After verification, you'll receive two emails from Paradime:
 ---
 
 ## Competition Details
-- **[Entry Requirements](#entry-requirements)**
-- **[Competition Deliverables](#competition-deliverables)**
-- **[Judging Criteria](#judging-criteria)**
+- **[Entry Requirements]([#entry-requirements](https://www.paradime.io/dbt-data-modeling-challenge-nba-edition#div-entry-requirements))**
+- **[Competition Deliverables](https://www.paradime.io/dbt-data-modeling-challenge-nba-edition#div-challenge-deliverables)**
+- **[Judging Criteria]([#judging-criteria](https://www.paradime.io/dbt-data-modeling-challenge-nba-edition#div-judging-criteria))**
 
 ---
 ## Building Your Project
@@ -85,7 +85,7 @@ Submit the following to Parker Rogers (parker@paradime.io) upon completion:
 - A README.md narrating your project's story and methodology ([Example](https://github.com/jpooksy/paradime-dbt-nba-challenge/blob/main/README.md#my-github-repo))
 - Data visualizations and analyses, ideally in your README.md or through alternative formats ([Example](https://github.com/jpooksy/paradime-dbt-nba-challenge/blob/main/README.md#visualizations))
 
-# dbt™ Data Modeling Challenge - NBA Edition: Example Submission
+# Example Submission
 Here's an example project that fulfills all requirements and would be elligble eligible for cash prizes. Feel free to use this template for your submission, but ensure your insights are unique!
 
 ## Table of Contents
