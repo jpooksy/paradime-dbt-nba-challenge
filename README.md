@@ -123,6 +123,7 @@ My analysis leverages three key NBA datasets from Paradime:
 - SQL and dbt™ to transform _stg_player_game_logs_ and _stg_common_player_info_ to understand
   playoff and regular season performance by individual players
 - SQL and dbt™ to transform _stg_common_player_info_ for insights on NBA players' college backgrounds.
+- SQL and dbt™ to transform _stg_team_stats_by_season_ for insights on NBA Team's playoff historical playoff performance.
 
 ## Visualizations
 ### Team Playoff Appearances
