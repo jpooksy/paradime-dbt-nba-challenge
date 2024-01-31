@@ -104,7 +104,7 @@ Here's an example project that fulfills all requirements and would be elligble e
 ## Introduction
 Explore my project for the _dbt™ data modeling challenge - NBA Edition_, Hosted by [Paradime](https://www.paradime.io/)! This project dives into the analysis and visualization of NBA statistics, designed for basketball enthusiasts and analysts.
 
-## [My GitHub repo](https://github.com/jpooksy/paradime-dbt-nba-challenge/blob/main/nba/models/sources/schema.yml)
+### [My GitHub repo](https://github.com/jpooksy/paradime-dbt-nba-challenge)
 
 ## Data Sources
 My analysis leverages three key NBA datasets from Paradime:
