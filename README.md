@@ -2,11 +2,31 @@
 
 Welcome to the Paradime dbt™ Data Modeling Challenge - NBA Edition!
 
+## Table of Contents
+1. [Getting Started](#getting-started)
+   - [Registration and Verification](#step-1-registration-and-verification)
+   - [Account Set-Up](#step-2-account-set-up)
+   - [Paradime Account Configuration](#step-3-paradime-account-configuration)
+   - [Kickstart Your Project](#step-4-kickstart-your-project)
+2. [Competition Details](#competition-details)
+3. [Building Your Project](#building-your-project)
+   - [Getting to Know the Paradime Editor](#step-1-getting-to-know-the-paradime-editor)
+   - [Getting to Know the NBA Data Sets](#step-2-getting-to-know-the-nba-data-sets)
+   - [Generating Insights](#step-3-generating-insights)
+   - [Creating Data Visualizations](#creating-data-visualizations)
+   - [Submitting Your Project](#submitting-your-project)
+4. [Example Submission](#dbttm-data-modeling-challenge---nba-edition-example-submission)
+   - [Introduction](#introduction)
+   - [Data Sources](#data-sources)
+   - [Methodology](#methodology)
+   - [Visualizations](#visualizations)
+   - [Conclusions](#conclusions)
+
 ## Getting Started
 
 ### Step 1: Registration and Verification
-- **Submit form to join challenge**: Fill out the [registration form](https://www.paradime.io/dbt-data-modeling-challenge-nba-edition#div-registration-form).
-- **Verification by Paradime**: We'll review your form against the [participation requirements](https://www.paradime.io/dbt-data-modeling-challenge-nba-edition).
+- **Submit Your Application**: Fill out the [registration form](https://www.paradime.io/dbt-data-modeling-challenge-nba-edition#div-registration-form).
+- **Verification by Paradime**: We'll review your application against the [participation requirements](https://www.paradime.io/dbt-data-modeling-challenge-nba-edition).
 
 ### Step 2: Account Set-Up
 After verification, you'll receive two emails from Paradime:
@@ -66,8 +86,6 @@ Submit the following upon completion:
 - A README.md narrating your project's story and methodology (Example)
 - Data visualizations and analyses, ideally in your README.md or through alternative formats (Example)
 
-
-
 # dbt™ Data Modeling Challenge - NBA Edition: Example Submission
 Here's an example project that fulfills all requirements and would be elligble eligible for cash prizes. Feel free to use this template for your submission, but ensure your insights are unique!
 
@@ -107,7 +125,6 @@ My analysis leverages three key NBA datasets from Paradime:
 - SQL and dbt™ to transform _stg_player_game_logs_ and _stg_common_player_info_ to understand
   playoff and regular season performance by individual players
 - SQL and dbt™ to transform _stg_common_player_info_ for insights on NBA players' college backgrounds.
-- SQL and dbt™ transform _stg_team_stats_by_season_ for insights into team playoff appearances.
 
 ## Visualizations
 ### Team Playoff Appearances
@@ -115,9 +132,9 @@ Visualization of playoff appearances for all 30 NBA teams, including their playo
 
 ![Team Playoff Appearances](https://github.com/jpooksy/dbt_Data_Modeling_Challenge_NBA/assets/107123308/48b10c60-8388-495b-9901-f8306b0b8a56)
 
-*Insights:* 
-The Los Angeles Lakers' dominance in playoff appearances, and the San Antonio Spurs' highest playoff appearance rate. 
-The Spurs have only missed the playoffs 9 time! 
+*Insights:*
+The Los Angeles Lakers' dominance in playoff appearances, and the San Antonio Spurs' highest playoff appearance rate.
+The Spurs have only missed the playoffs 9 times!
 
 ### Player Playoff Games
 Assessment of NBA players with the highest number of playoff game wins and their win percentages. The '*' next to NBA Player name indicates if they're 
