@@ -23,21 +23,19 @@ Welcome to the Paradime dbt™ Data Modeling Challenge - NBA Edition!
 ### Step 2: Account Set-Up
 After verification, you'll receive two emails from Paradime:
 1. **Snowflake Account Credentials**: Contains your Snowflake account details.
-   ![Snowflake Account Credentials](link_to_screenshot)
 2. **Paradime Platform Invitation**: An invitation to access the Paradime Platform.
-   ![Paradime Platform Invitation](link_to_screenshot)
 
 ### Step 3: Paradime Account Configuration
 - **Access Paradime**: Use the provided credentials to log into your account.
 - **Snowflake Integration**: Add Snowflake credentials (Username, Password, Role, Database) to Paradime.
-   ![Configure Snowflake in Paradime](link_to_arcade_screenshot)
-- **Need Help?**: Join the #nba-challenge channel on [Slack](https://paradimers.slack.com/join/shared_invite/zt-1mzax4sb8-jgw~hXRlDHAx~KN0az18bw#/shared-invite/email) for assistance.
+   Parker - Add Arcade
 
 ### Step 4: Kickstart Your Project
 - **Create a New Branch**: Open the Paradime Editor and create a new branch.
 - **Start Developing**: Begin crafting SQL queries, developing dbt™ models, and generating insights!
    ![Start Developing in Paradime](link_to_arcade_screenshot)
 
+**Need Help?**: Join the #nba-challenge channel on [Slack](https://paradimers.slack.com/join/shared_invite/zt-1mzax4sb8-jgw~hXRlDHAx~KN0az18bw#/shared-invite/email) for assistance.
 ---
 
 ## Competition Details
