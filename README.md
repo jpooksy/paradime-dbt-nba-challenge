@@ -1,7 +1,14 @@
 # dbt™ Data Modeling Challenge - NBA Edition
 
 ## Requirements
-After submissing 
+After a participant submits a form [link], Paradime will manually verify if partiipants meet the requirements [link].
+
+Once verified, Paradime will send participant two emails:
+1: Snowflake account credentials
+2: Paradime account credentials. 
+
+From there, users will set up their Paradime account. 
+
 
 # dbt™ Data Modeling Challenge - NBA Edition: Example Submission
 here's an example project that fulfills all requirements and would be elligble eligible for cash prizes. Feel free to use this template for your submission, but ensure your insights are unique!
