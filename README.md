@@ -4,11 +4,15 @@
 After a participant submits a form [link], Paradime will manually verify if partiipants meet the requirements [link].
 
 Once verified, Paradime will send participant two emails:
-1: Snowflake account credentials
-2: Paradime account credentials. 
+1: Snowflake account credentials. (Screenshot)
+2: Paradime Platform invitation (Screenshot)
 
-From there, users will set up their Paradime account. 
+From there, users will set up their Paradime account:
+- Add Snowflake credentials that we provide in the email: Username, Password, role, database.
+(arcade)
 
+As soon as you join Paradime, create a new branch and start developing! 
+(Arcade)
 
 # dbt™ Data Modeling Challenge - NBA Edition: Example Submission
 here's an example project that fulfills all requirements and would be elligble eligible for cash prizes. Feel free to use this template for your submission, but ensure your insights are unique!
