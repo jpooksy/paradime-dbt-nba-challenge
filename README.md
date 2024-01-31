@@ -38,16 +38,12 @@ After verification, you'll receive two emails from Paradime:
 - **Start Developing**: Begin crafting SQL queries, developing dbt™ models, and generating insights!
    ![Start Developing in Paradime](link_to_arcade_screenshot)
 
-[Back to Top](#dbttm-data-modeling-challenge---nba-edition)
-
 ---
 
 ## Competition Details
 - **[Entry Requirements](#entry-requirements)**
 - **[Competition Deliverables](#competition-deliverables)**
 - **[Judging Criteria](#judging-criteria)**
-
-[Back to Top](#dbttm-data-modeling-challenge---nba-edition)
 
 ---
 
