@@ -79,10 +79,11 @@ Alternatively, export your dbt™ models to a .csv for spreadsheet visualization
 [Add screenshot]
 
 ### Submitting Your Project
-Submit the following upon completion:
-- A GitHub repository containing your dbt™ models (Example)
-- A README.md narrating your project's story and methodology (Example)
-- Data visualizations and analyses, ideally in your README.md or through alternative formats (Example)
+**Submission deadline:** March 8th, 2024
+Submit the following to Parker Rogers (parker@paradime.io) upon completion:
+- A GitHub repository containing your dbt™ models ([Example](https://github.com/jpooksy/paradime-dbt-nba-challenge/blob/main/README.md#dbt-data-modeling-challenge---nba-edition-example-submission))
+- A README.md narrating your project's story and methodology ([Example](https://github.com/jpooksy/paradime-dbt-nba-challenge/blob/main/README.md#my-github-repo))
+- Data visualizations and analyses, ideally in your README.md or through alternative formats ([Example](https://github.com/jpooksy/paradime-dbt-nba-challenge/blob/main/README.md#visualizations))
 
 # dbt™ Data Modeling Challenge - NBA Edition: Example Submission
 Here's an example project that fulfills all requirements and would be elligble eligible for cash prizes. Feel free to use this template for your submission, but ensure your insights are unique!
