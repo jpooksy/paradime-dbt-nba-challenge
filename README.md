@@ -40,9 +40,9 @@ After verification, you'll receive two emails from Paradime:
 ---
 
 ## Competition Details
-- **[Entry Requirements](#entry-requirements)**
-- **[Competition Deliverables](#competition-deliverables)**
-- **[Judging Criteria](#judging-criteria)**
+- **[Entry Requirements]([#entry-requirements](https://www.paradime.io/dbt-data-modeling-challenge-nba-edition#div-entry-requirements))**
+- **[Competition Deliverables](https://www.paradime.io/dbt-data-modeling-challenge-nba-edition#div-challenge-deliverables)**
+- **[Judging Criteria]([#judging-criteria](https://www.paradime.io/dbt-data-modeling-challenge-nba-edition#div-judging-criteria))**
 
 ---
 ## Building Your Project
