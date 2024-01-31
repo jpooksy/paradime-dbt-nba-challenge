@@ -22,20 +22,21 @@ Welcome to the Paradime dbt™ Data Modeling Challenge - NBA Edition!
 
 ### Step 2: Account Set-Up
 After verification, you'll receive two emails from Paradime:
-1. **Snowflake Account Credentials**: Contains your Snowflake account details.
-2. **Paradime Platform Invitation**: An invitation to access the Paradime Platform.
+1. **Snowflake Account Credentials**: Contains your Snowflake account details. Search for an email with the subject line "*Start Your NBA Data Modeling Challenge – Your Snowflake Credentials*."
+2. **Paradime Platform Invitation**: An invitation to access the Paradime Platform. Search for an email with the subject line "*Final Step: Activate Your Paradime Account for the NBA Challenge*."
 
 ### Step 3: Paradime Account Configuration
-- **Access Paradime**: Use the provided credentials to log into your account.
+- **Access Paradime**: Use the provided credentials to log into your account. Join the Paradime workspace using the invite email.
 - **Snowflake Integration**: Add Snowflake credentials (Username, Password, Role, Database) to Paradime.
-   Parker - Add Arcade
+- **Act Fast - Limited Time Activation**: The links to activate your Paradime account expire within 24 hours!
 
 ### Step 4: Kickstart Your Project
-- **Create a New Branch**: Open the Paradime Editor and create a new branch.
+- **Create a New Branch**: Open the Paradime Editor and create a new branch. Your branch name should follow this format: "nba-<your_email>"
 - **Start Developing**: Begin crafting SQL queries, developing dbt™ models, and generating insights!
    ![Start Developing in Paradime](link_to_arcade_screenshot)
 
 **Need Help?**: Join the #nba-challenge channel on [Slack](https://paradimers.slack.com/join/shared_invite/zt-1mzax4sb8-jgw~hXRlDHAx~KN0az18bw#/shared-invite/email) for assistance.
+
 ---
 
 ## Competition Details
@@ -44,8 +45,9 @@ After verification, you'll receive two emails from Paradime:
 - **[Judging Criteria](#judging-criteria)**
 
 ---
-
 ## Building Your Project
+
+Now that you're set up, you have until March 8, 2024 to complete and submit your project!
 
 ### Step 1: Getting to Know the Paradime Editor
 - [Using the Editor](https://docs.paradime.io/app-help/welcome-to-paradime.io/tutorials/getting-started-with-the-paradime-ide#discover-editor-core-functionalities)
@@ -53,7 +55,7 @@ After verification, you'll receive two emails from Paradime:
 - [Creating Your First dbt Model](https://docs.paradime.io/app-help/welcome-to-paradime.io/tutorials/getting-started-with-the-paradime-ide#create-and-run-your-first-dbt-tm-model)
 
 ### Step 2: Getting to Know the NBA Data Sets
-Explore [7 NBA data sets](https://github.com/jpooksy/paradime-dbt-nba-challenge/tree/main/nba/models/sources) provided by Paradime, each with primary and foreign keys for insightful analysis. Detailed information about each dataset is available in the [staging files](https://github.com/jpooksy/paradime-dbt-nba-challenge/tree/main/nba/models/sources) and [YAML file](https://github.com/jpooksy/paradime-dbt-nba-challenge/blob/main/nba/models/sources/schema.yml).
+Explore [7 NBA data sets](https://github.com/jpooksy/paradime-dbt-nba-challenge/tree/main/nba/models/sources) provided by Paradime, each with primary and foreign keys for insightful analysis. Detailed information about each dataset is available in the [staging files](https://github.com/jpooksy/paradime-dbt-nba-challenge/tree/main/nba/models/sources) and [YAML file](https://github.com/jpooksy/paradime-dbt-nba-challenge/blob/main/nba/models/sources/schema.yml). If reading YAML file is confusing, you can learn about each data set and columns in within the [Paradime Catalog UI](https://app.demo.paradime.io/catalog/search)
 
 ### Step 3: Generating Insights
 Your goal is to build dbt™ models that reveal compelling insights for NBA fans and General Managers. Here are some suggested topics:
@@ -71,9 +73,9 @@ Your goal is to build dbt™ models that reveal compelling insights for NBA fans
     - Data Required: *[team_stats_by_season](https://github.com/jpooksy/dbt_Data_Modeling_Challenge_NBA/blob/main/nba/models/sources/stg_team_stats_by_season.sql)*
 
 ### Creating Data Visualizations
-Choose any data visualization tool. Paradime has various [BI tool integrations](https://www.paradime.io/integrations) like Power BI, Lightdash, Metabase, Preset, Tableau, and Looker. 
+Choose any data visualization tool. Paradime has various [BI tool integrations](https://www.paradime.io/integrations) like Power BI, Lightdash, Metabase, Preset, Tableau, Metabase, and Looker. 
 
-Alternatively, export your dbt™ models to a .csv for spreadsheet visualization. Note: We'll verify if the .csv export matches your dbt™ models.
+Alternatively, Alternatively, export the data behind your dbt™ models from Snowflake to .csv files. Note: We'll verify if the .csv export matches your dbt™ models.
 [Add screenshot]
 
 ### Submitting Your Project
